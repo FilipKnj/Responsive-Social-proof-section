@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  min-height: 100vh;
+  background: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0, 50rem 2rem;
+}
+
+.card {
+  margin: 100px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1140px;
+}
+
+.card-top-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.card-top-part .card-top-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 50%;
+  padding: 1rem 3rem 1rem 1.4rem;
+}
+.card-top-part .card-top-left h1 {
+  font-size: 3rem;
+  color: #502050;
+}
+.card-top-part .card-top-left p {
+  font-size: 15px;
+  color: #502050;
+  margin-top: 1rem;
+  line-height: 1.5rem;
+}
+.card-top-part .card-top-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0.7rem;
+  position: relative;
+  width: 50%;
+}
+.card-top-part .card-top-right .star-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 1.5rem;
+  background: #f7f2f7;
+  border-radius: 7px;
+  margin-top: 1rem;
+  min-width: 500px;
+  position: absolute;
+}
+.card-top-part .card-top-right .star-container p {
+  margin-left: 1.5rem;
+  padding-right: 2rem;
+  font-weight: bold;
+  font-size: 15px;
+  color: #502050;
+}
+.card-top-part .card-top-right .star-container img {
+  margin: 3px;
+  width: 17px;
+  height: auto;
+}
+
+.star-container:nth-of-type(1) {
+  top: 5%;
+  left: 10%;
+}
+
+.star-container:nth-of-type(2) {
+  top: 35%;
+  left: 24%;
+}
+
+.star-container:nth-of-type(3) {
+  top: 65%;
+  left: 34%;
+}
+
+.card-bottom-part {
+  padding: 1rem 2rem 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.contact-card {
+  padding: 3%;
+  border-radius: 6px;
+  background-color: #502050;
+  width: 33.333%;
+  margin: 1rem;
+  position: absolute;
+}
+.contact-card .contact-header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+.contact-card .contact-header img {
+  width: 15%;
+  height: auto;
+  border-radius: 50%;
+}
+.contact-card .contact-header .contact-name {
+  margin-left: 1rem;
+}
+.contact-card .contact-header .contact-name .name {
+  font-weight: bold;
+  color: white;
+  margin-bottom: 0.3rem;
+}
+.contact-card .contact-header .contact-name .title {
+  color: #ee68a4;
+}
+.contact-card .contact-text {
+  color: white;
+  font-size: 13px;
+  line-height: 1.3rem;
+}
+
+.contact-card:nth-of-type(1) {
+  top: 0%;
+  left: 0%;
+}
+
+.contact-card:nth-of-type(2) {
+  top: 50%;
+  left: 35%;
+}
+
+.contact-card:nth-of-type(3) {
+  top: 100%;
+  left: 70%;
+}
+
+@media screen and (max-width: 980px) {
+  html, body {
+    overflow: scroll;
+  }
+
+  .card {
+    width: 90%;
+    height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 10px auto;
+  }
+  .card .card-top-part {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card .card-top-part .card-top-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 0.5rem;
+    text-align: center;
+  }
+  .card .card-top-part .card-top-left h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .card .card-top-part .card-top-right {
+    position: static;
+    width: 100%;
+  }
+  .card .card-top-part .card-top-right .star-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-width: 90%;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    position: static;
+  }
+  .card .card-top-part .card-top-right .star-container img {
+    padding: 0;
+    margin: 0;
+  }
+  .card .card-top-part .card-top-right .star-container p {
+    padding: 0;
+    margin: 0;
+  }
+  .card .card-top-part .card-top-right .star-container .stars-div {
+    text-align: center;
+    margin-bottom: 0.6rem;
+  }
+  .card .card-bottom-part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: static;
+  }
+  .card .card-bottom-part .contact-card {
+    position: static;
+    width: 100%;
+  }
+}
